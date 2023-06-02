@@ -2,26 +2,23 @@
   Last Score: 343.1 (87.2% match)
   High Score: 343.1 {484} ---> 
 
- <div>
+<div>
   <div id="circle"></div>
   <div id="rect"></div>
 </div>
-
 <style>
   body {
     display: grid;
     background: #19191A;
     place-items: center;
   }
-
 #circle {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: #4f77ff;
-    margin-top: 59px;
-    margin-left: -58px;
-    position: absolute;
+    isolation: isolate;
+    background: conic-gradient(#4F77FF 50%, #9AD5FF 0 75%, #4F77FF 0);
+    margin-top: 42px;
   }
 
   #rect {
@@ -30,6 +27,5 @@
   margin-top: 120px;
   margin-left: -58px;
   background: #F9E492;
-  mix-blend-mode: overlay;
 }
 </style>
