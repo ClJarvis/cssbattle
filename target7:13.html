@@ -1,12 +1,14 @@
 <!-- 
   CSS Target 7/13/23
   https://cssbattle.dev/play/5NBbjD4pnEWCsxNQ4QoH
-  Last Score: 517.05(95.9% match)
-  High Score: 517.04 {553} characters} --->
+  Last Score: 601.49(100% match)
+  High Score: 601.49 {587} characters} --->
 <div class="cir">
-  <div class="line"></div>
-    <div class="line L"></div>
-    <div class="line R"></div>
+  <div class="box">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+ </div>
 </div>
 <style>
   body {
@@ -24,12 +26,14 @@
     justify-content: space-around;
     align-items: center;
   }
+  .box {
+    transform: rotate(-45deg);
+    display: grid;
+    gap: 10px;
+  }
   .line {
-    height: 12px;
+    height: 10px;
     width: 160px;
     background: #4F77FF;
-    transform: rotate(-45deg);
-    position:realtive;
   }
-
 </style>
