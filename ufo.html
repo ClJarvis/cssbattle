@@ -1,0 +1,42 @@
+<div class="dome"></div>
+<div class="base">
+  <div class="lght"></div>
+  <div class="lght"></div>
+  <div class="lght"></div>
+</div>
+<style>
+  body {
+    background: #2F434E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .dome {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #E25C57;
+    position: absolute;
+  }
+  .base {
+    width: 200;
+    height: 50;
+    background: #F3AC3C;
+    position: relative;
+    transform: skew(45deg);
+    transform: skew(-45deg);
+    margin-bottom: -80;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+  }
+  .lght {
+    width: 20;
+    height: 20;
+    border-radius: 50%;
+    background:#E25C57;
+    transform: skew(-45deg);
+    transform: skew(45deg); 
+  }
+</style>
